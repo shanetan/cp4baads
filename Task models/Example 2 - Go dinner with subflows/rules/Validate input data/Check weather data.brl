@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Check weather data</name>
+  <uuid>47801d2b-75b9-4be4-a527-2151f21c3331</uuid>
+  <documentation><![CDATA[Check that weather forecast has been passed.]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	'the weather forecast' is null 
+then
+	set 'data is valid' to false;
+    add "Invalid data: Weather forecast" to the explanations of 'the final answer' ;
+    'the final answer' does not get go ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

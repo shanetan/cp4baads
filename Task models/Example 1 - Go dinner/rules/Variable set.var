@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Variable set</name>
+  <uuid>94923e92-7e97-478c-9aca-09b1c125acd5</uuid>
+  <documentation><![CDATA[Variables used in the decision service.]]></documentation>
+  <variables name="FinancialInformation" type="Finance" initialValue="" verbalization="financial information" jsonName=""/>
+  <variables name="Guests" type="java.util.List&lt;java.lang.Boolean>" initialValue="" verbalization="guests" jsonName=""/>
+  <variables name="WeatherForecast" type="Weather" initialValue="" verbalization="the weather forecast" jsonName=""/>
+  <variables name="FinalAnswer" type="Answer" initialValue="" verbalization="the final answer" jsonName=""/>
+  <variables name="availableGuests" type="java.lang.Long" initialValue="0" verbalization="the available guests" jsonName=""/>
+  <variables name="validData" type="java.lang.Boolean" initialValue="true" verbalization="data is valid" jsonName=""/>
+</ilog.rules.studio.model.base:VariableSet>

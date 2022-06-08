@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Count available guests</name>
+  <uuid>fc7bac60-b2ed-42fb-840f-66a69cfbdbbc</uuid>
+  <documentation><![CDATA[Count the number of guests marked as available. Availability comes from an entry in the array of booleans called 'guests']]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+	// extract list of true booleans 
+    set availableGuestList to all booleans in guests where each boolean is true ;
+
+then
+	// count the number of elements
+	set 'the available guests' to the number of elements in availableGuestList;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

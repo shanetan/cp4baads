@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Check availability list</name>
+  <uuid>065a6010-554c-46b5-a0a0-36d9ba6a267b</uuid>
+  <documentation><![CDATA[Check that the array containing guest availability is not empty.]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the number of elements in guests is less than 1
+then
+	set 'data is valid' to false ;
+    add "Invalid data: Availability" to the explanations of 'the final answer' ;
+    'the final answer' does not get go ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

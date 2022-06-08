@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Enough available guests</name>
+  <uuid>074560a9-3aaa-4c62-8022-190f80f95864</uuid>
+  <documentation><![CDATA[Determine whether we have enough available guests. Availability comes from an entry in the array of booleans called 'guests'.
+In this case,  75% attendance is required.]]></documentation>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+	// Compute the total number of invitees
+    set total to the number of elements in guests;
+    // Compute the attendance percentage
+    set 'attendance percentage' to (100.0 * 'the available guests') / total;
+
+
+if 'attendance percentage' is less than 75 
+  then
+    'the final answer' does not get go ;
+    add "Not enough available guests." to the explanations of 'the final answer' ; 
+    
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

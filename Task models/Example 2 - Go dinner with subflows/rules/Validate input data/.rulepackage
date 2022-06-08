@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Validate input data</name>
+  <uuid>69961aa0-495d-4280-aff9-f383d8045801</uuid>
+  <documentation><![CDATA[Rules to validate that input data is valid (no missing data)]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

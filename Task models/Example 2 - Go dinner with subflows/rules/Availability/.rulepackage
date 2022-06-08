@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Availability</name>
+  <uuid>4a5ca3d0-f3b9-4a31-a877-7d0b5ff1ed1d</uuid>
+  <documentation><![CDATA[Rules to assess availability rate.]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

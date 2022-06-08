@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Go Dinner ruleflow</name>
+  <uuid>d481e765-22a2-4b60-abe6-f1b3bc132bc8</uuid>
+  <documentation><![CDATA[This rule flow contains the logic of the decision.
+After checking that input data is correct, it checks several criteria that may cancel the dinner.]]></documentation>
+  <locale>en_US</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0">
+                <Actions Language="bal"><![CDATA[set 'the final answer' to a new final answer where 
+	go is true;]]></Actions>
+            </StartTask>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default">
+                <RuleList>
+                    <Rule Uuid="6f552c84-6c55-4667-9666-7b34e033778b"/>
+                </RuleList>
+            </RuleTask>
+            <StopTask Identifier="task_2"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_4" Ordering="Default">
+                <RuleList>
+                    <Rule Uuid="3c7d60a9-c52a-42c2-a129-454db46fe3d1"/>
+                </RuleList>
+            </RuleTask>
+            <RuleTask ExecutionMode="Sequential" ExitCriteria="None" Identifier="task_5" Ordering="Default">
+                <RuleList>
+                    <Rule Uuid="fc7bac60-b2ed-42fb-840f-66a69cfbdbbc"/>
+                    <Rule Uuid="074560a9-3aaa-4c62-8022-190f80f95864"/>
+                </RuleList>
+            </RuleTask>
+            <SubflowTask Identifier="task_7" Uuid="cf1ee84f-5503-4e61-88f1-c1bc1ee619a4"/>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+            <TaskNode Identifier="node_4" Task="task_4"/>
+            <TaskNode Identifier="node_5" Task="task_5"/>
+            <BranchNode Identifier="node_7"/>
+            <ForkNode Identifier="node_8"/>
+            <JoinNode Identifier="node_9"/>
+            <TaskNode Identifier="node_10" Task="task_7"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_8" Source="node_7" Target="node_8"/>
+            <Transition Identifier="transition_12" Source="node_8" Target="node_1"/>
+            <Transition Identifier="transition_13" Source="node_8" Target="node_5"/>
+            <Transition Identifier="transition_14" Source="node_8" Target="node_4"/>
+            <Transition Identifier="transition_10" Source="node_5" Target="node_9"/>
+            <Transition Identifier="transition_15" Source="node_1" Target="node_9"/>
+            <Transition Identifier="transition_17" Source="node_9" Target="node_2"/>
+            <Transition Identifier="transition_11" Source="node_7" Target="node_2">
+                <Conditions Language="bal"><![CDATA[ 'data is valid' is false]]></Conditions>
+            </Transition>
+            <Transition Identifier="transition_16" Source="node_4" Target="node_9"/>
+            <Transition Identifier="transition_18" Source="node_0" Target="node_10"/>
+            <Transition Identifier="transition_19" Source="node_10" Target="node_7"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_4#documentation"><![CDATA[Check that weather is acceptable]]></Data>
+            <Data Name="transition_11#label"><![CDATA[Invalid]]></Data>
+            <Data Name="transition_8#label"><![CDATA[Valid]]></Data>
+            <Data Name="node_5#documentation"><![CDATA[Check that enough guests are available]]></Data>
+            <Data Name="node_5#label"><![CDATA[Check availability]]></Data>
+            <Data Name="node_10#label"><![CDATA[Validate data - Subflow]]></Data>
+            <Data Name="node_0#documentation"><![CDATA[Let's get started with this flow.]]></Data>
+            <Data Name="node_1#label"><![CDATA[Check budget]]></Data>
+            <Data Name="node_8#documentation"><![CDATA[Runs multiple tasks and check key criteria]]></Data>
+            <Data Name="node_7#documentation"><![CDATA[If data is invalid, let's jump to the end.]]></Data>
+            <Data Name="node_4#label"><![CDATA[Check weather]]></Data>
+            <Data Name="node_1#documentation"><![CDATA[Check that the budget is acceptable]]></Data>
+            <Data Name="transition_8#documentation"><![CDATA[Data is valid, now let's check what's acceptable or not.]]></Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

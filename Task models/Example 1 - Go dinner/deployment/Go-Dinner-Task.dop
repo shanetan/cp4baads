@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="function" usingRuleflow="true" ruleflowName="Go Dinner ruleflow" targetRuleProjectName="Example 1 - Go dinner">
+  <name>Go-Dinner-Task</name>
+  <uuid>a13520a0-d551-43bf-89e0-41845a149f8c</uuid>
+  <description><![CDATA[]]></description>
+  <referencedVariables variableName="FinancialInformation" variableSetName="Variable set">
+    <variableSet href="../rules/Variable%20set.var#94923e92-7e97-478c-9aca-09b1c125acd5"/>
+  </referencedVariables>
+  <referencedVariables variableName="Guests" variableSetName="Variable set">
+    <variableSet href="../rules/Variable%20set.var#94923e92-7e97-478c-9aca-09b1c125acd5"/>
+  </referencedVariables>
+  <referencedVariables variableName="WeatherForecast" variableSetName="Variable set">
+    <variableSet href="../rules/Variable%20set.var#94923e92-7e97-478c-9aca-09b1c125acd5"/>
+  </referencedVariables>
+  <referencedVariables variableName="FinalAnswer" variableSetName="Variable set" direction="OUT">
+    <variableSet href="../rules/Variable%20set.var#94923e92-7e97-478c-9aca-09b1c125acd5"/>
+  </referencedVariables>
+  <ruleflow href="../rules/Go%20Dinner%20ruleflow.rfl#d481e765-22a2-4b60-abe6-f1b3bc132bc8"/>
+  <targetRuleProject href="../../Example%201%20-%20Go%20dinner#b8f8200a-f3b9-4451-8dfa-f0732baba88e"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["GoDinnerTask"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>
