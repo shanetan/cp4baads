@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>check stock</name>
+  <uuid>ed8242f5-47f5-4f26-aa1f-b137bc967a8b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the stock of 'Customer information' is null
+then
+	 add "Error: Stock is missing." to decision;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

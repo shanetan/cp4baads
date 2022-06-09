@@ -1,0 +1,33 @@
+{
+  "customerInformation" : {
+    "company" : "IBM",
+    "contracts" : [ {
+      "name" : "Contract 1",
+      "startDate" : "2020-04-04",
+      "value" : 20000,
+      "milestones" : [ {
+        "name" : "Step 1",
+        "completed" : true
+      }, {
+        "name" : "Step 2",
+        "completed" : false
+      } ],
+      "currency" : "EUR"
+    }, {
+      "name" : "Contract 2",
+      "startDate" : "2020-02-01",
+      "value" : 35000,
+      "milestones" : [ {
+        "name" : "Phase 1",
+        "completed" : false
+      }, {
+        "name" : "Phase 2",
+        "completed" : false
+      } ],
+      "currency" : "USD"
+    } ],
+    "stock" : "IBM",
+    "firstName" : "John",
+    "lastName" : "Doe"
+  }
+}

@@ -1,0 +1,3267 @@
+
+
+public class Contract
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Contract"
+        property "de.generated" "true"
+{
+    public Currency currency
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "currency"
+                property update "true";
+    public java.util.List milestones domain 0,* class Milestone
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "milestones"
+                property update "true";
+    public string name
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "name"
+                property update "true";
+    public ilog.rules.brl.SimpleDate startDate
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "startDate"
+                property update "true";
+    public double value
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "value"
+                property update "true";
+    public Contract(Currency currency, 
+        java.util.List milestones domain 0,* class Milestone, 
+        string name, 
+        ilog.rules.brl.SimpleDate startDate, 
+        double value)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Contract()
+                property "dataio.default" "true";
+    public void addTo_milestones(Milestone milestones)
+                property collectionAttribute "milestones"
+                property update "true";
+    public void clear_milestones()
+                property collectionAttribute "milestones"
+                property update "true";
+    public void removeFrom_milestones(Milestone milestones)
+                property collectionAttribute "milestones"
+                property update "true";
+    public void set_milestones(java.util.Collection milestones domain 0,* class Milestone)
+                property collectionAttribute "milestones"
+                property update "true";
+}
+
+public class Currency
+        extends java.lang.Enum
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Currency"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property "de.generated" "true"
+        property domainProviderResource "domains/currencies.xlsx"
+{
+    domain 
+    {
+        static ADP,
+        static AED,
+        static AFA,
+        static ALK,
+        static ALL,
+        static AMD,
+        static ANG,
+        static AOA,
+        static AON,
+        static AOR,
+        static ARA,
+        static ARP,
+        static ARS,
+        static ARY,
+        static ATS,
+        static AUD,
+        static AWG,
+        static AYM,
+        static AZM,
+        static BAD,
+        static BAM,
+        static BBD,
+        static BDT,
+        static BEC,
+        static BEF,
+        static BEL,
+        static BGJ,
+        static BGK,
+        static BGL,
+        static BGN,
+        static BHD,
+        static BIF,
+        static BMD,
+        static BND,
+        static BOB,
+        static BOP,
+        static BOV,
+        static BRB,
+        static BRC,
+        static BRL,
+        static BRN,
+        static BRR,
+        static BSD,
+        static BTN,
+        static BUK,
+        static BWP,
+        static BYR,
+        static BZD,
+        static CAD,
+        static CDF,
+        static CHC,
+        static CHE,
+        static CHF,
+        static CHW,
+        static CLF,
+        static CLP,
+        static CNY,
+        static COP,
+        static COU,
+        static CRC,
+        static CSD,
+        static CSJ,
+        static CSK,
+        static CUC,
+        static CUP,
+        static CVE,
+        static CYP,
+        static CZK,
+        static DDM,
+        static DEM,
+        static DJF,
+        static DKK,
+        static DOP,
+        static DZD,
+        static ECS,
+        static EEK,
+        static EGP,
+        static ERN,
+        static ESA,
+        static ETB,
+        static EUR,
+        static FIM,
+        static FJD,
+        static FKP,
+        static FRF,
+        static GBP,
+        static GEK,
+        static GEL,
+        static GHC,
+        static GHP,
+        static GIP,
+        static GMD,
+        static GNE,
+        static GNF,
+        static GQE,
+        static GRD,
+        static GTQ,
+        static GWE,
+        static GWP,
+        static GYD,
+        static HKD,
+        static HNL,
+        static HRD,
+        static HRK,
+        static HTG,
+        static HUF,
+        static IDR,
+        static IEP,
+        static ILP,
+        static ILR,
+        static ILS,
+        static INR,
+        static IQD,
+        static IRR,
+        static ISJ,
+        static ISK,
+        static ITL,
+        static JMD,
+        static JOD,
+        static JPY,
+        static KES,
+        static KGS,
+        static KHR,
+        static KMF,
+        static KPW,
+        static KRW,
+        static KWD,
+        static KYD,
+        static KZT,
+        static LAJ,
+        static LAK,
+        static LBP,
+        static LKR,
+        static LRD,
+        static LSL,
+        static LTL,
+        static LTT,
+        static LUC,
+        static LUF,
+        static LUL,
+        static LVL,
+        static LVR,
+        static LYD,
+        static MAD,
+        static MDL,
+        static MGA,
+        static MGF,
+        static MKD,
+        static MLF,
+        static MNT,
+        static MOP,
+        static MRO,
+        static MTL,
+        static MTP,
+        static MUR,
+        static MVQ,
+        static MVR,
+        static MWK,
+        static MXN,
+        static MXV,
+        static MYR,
+        static MZE,
+        static MZM,
+        static NAD,
+        static NGN,
+        static NIC,
+        static NIO,
+        static NLG,
+        static NOK,
+        static NPR,
+        static NZD,
+        static OMR,
+        static PAB,
+        static PEH,
+        static PEI,
+        static PGK,
+        static PHP,
+        static PKR,
+        static PLN,
+        static PTE,
+        static PYG,
+        static QAR,
+        static RHD,
+        static ROK,
+        static ROL,
+        static RON,
+        static RUB,
+        static RWF,
+        static SAR,
+        static SBD,
+        static SCR,
+        static SDD,
+        static SDG,
+        static SEK,
+        static SGD,
+        static SHP,
+        static SIT,
+        static SKK,
+        static SLL,
+        static SOS,
+        static SRD,
+        static SRG,
+        static SSP,
+        static STD,
+        static SUR,
+        static SVC,
+        static SYP,
+        static SZL,
+        static THB,
+        static TJR,
+        static TJS,
+        static TMM,
+        static TMT,
+        static TND,
+        static TOP,
+        static TPE,
+        static TRL,
+        static TRY,
+        static TTD,
+        static TWD,
+        static TZS,
+        static UAH,
+        static UAK,
+        static UGS,
+        static UGW,
+        static USD,
+        static USN,
+        static USS,
+        static UYI,
+        static UYN,
+        static UYP,
+        static UYU,
+        static UYW,
+        static UZS,
+        static VEB,
+        static VEF,
+        static VES,
+        static VNC,
+        static VND,
+        static VUV,
+        static WST,
+        static XAF,
+        static XAG,
+        static XAU,
+        static XBA,
+        static XBB,
+        static XBC,
+        static XBD,
+        static XCD,
+        static XDR,
+        static XEU,
+        static XFO,
+        static XFU,
+        static XOF,
+        static XPD,
+        static XPF,
+        static XPT,
+        static XRE,
+        static XTS,
+        static XUA,
+        static XXX,
+        static YDD,
+        static YER,
+        static YUD,
+        static YUM,
+        static YUN,
+        static ZAL,
+        static ZAR,
+        static ZMK,
+        static ZRN,
+        static ZRZ,
+        static ZWD
+    }
+    public static final readonly Currency ADP
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADP";
+    public static final readonly Currency AED
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AED";
+    public static final readonly Currency AFA
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AFA";
+    public static final readonly Currency ALK
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALK";
+    public static final readonly Currency ALL
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALL";
+    public static final readonly Currency AMD
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMD";
+    public static final readonly Currency ANG
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ANG";
+    public static final readonly Currency AOA
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AOA";
+    public static final readonly Currency AON
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AON";
+    public static final readonly Currency AOR
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AOR";
+    public static final readonly Currency ARA
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ARA";
+    public static final readonly Currency ARP
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ARP";
+    public static final readonly Currency ARS
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ARS";
+    public static final readonly Currency ARY
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ARY";
+    public static final readonly Currency ATS
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ATS";
+    public static final readonly Currency AUD
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AUD";
+    public static final readonly Currency AWG
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AWG";
+    public static final readonly Currency AYM
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AYM";
+    public static final readonly Currency AZM
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AZM";
+    public static final readonly Currency BAD
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BAD";
+    public static final readonly Currency BAM
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BAM";
+    public static final readonly Currency BBD
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BBD";
+    public static final readonly Currency BDT
+                property "ads.attributeId" "27"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BDT";
+    public static final readonly Currency BEC
+                property "ads.attributeId" "28"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BEC";
+    public static final readonly Currency BEF
+                property "ads.attributeId" "29"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BEF";
+    public static final readonly Currency BEL
+                property "ads.attributeId" "30"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BEL";
+    public static final readonly Currency BGJ
+                property "ads.attributeId" "31"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BGJ";
+    public static final readonly Currency BGK
+                property "ads.attributeId" "32"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BGK";
+    public static final readonly Currency BGL
+                property "ads.attributeId" "33"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BGL";
+    public static final readonly Currency BGN
+                property "ads.attributeId" "34"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BGN";
+    public static final readonly Currency BHD
+                property "ads.attributeId" "35"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BHD";
+    public static final readonly Currency BIF
+                property "ads.attributeId" "36"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BIF";
+    public static final readonly Currency BMD
+                property "ads.attributeId" "37"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BMD";
+    public static final readonly Currency BND
+                property "ads.attributeId" "38"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BND";
+    public static final readonly Currency BOB
+                property "ads.attributeId" "39"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BOB";
+    public static final readonly Currency BOP
+                property "ads.attributeId" "40"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BOP";
+    public static final readonly Currency BOV
+                property "ads.attributeId" "41"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BOV";
+    public static final readonly Currency BRB
+                property "ads.attributeId" "42"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRB";
+    public static final readonly Currency BRC
+                property "ads.attributeId" "43"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRC";
+    public static final readonly Currency BRL
+                property "ads.attributeId" "45"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRL";
+    public static final readonly Currency BRN
+                property "ads.attributeId" "46"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRN";
+    public static final readonly Currency BRR
+                property "ads.attributeId" "47"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRR";
+    public static final readonly Currency BSD
+                property "ads.attributeId" "48"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BSD";
+    public static final readonly Currency BTN
+                property "ads.attributeId" "49"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BTN";
+    public static final readonly Currency BUK
+                property "ads.attributeId" "50"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BUK";
+    public static final readonly Currency BWP
+                property "ads.attributeId" "51"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BWP";
+    public static final readonly Currency BYR
+                property "ads.attributeId" "54"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BYR";
+    public static final readonly Currency BZD
+                property "ads.attributeId" "55"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BZD";
+    public static final readonly Currency CAD
+                property "ads.attributeId" "56"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CAD";
+    public static final readonly Currency CDF
+                property "ads.attributeId" "57"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CDF";
+    public static final readonly Currency CHC
+                property "ads.attributeId" "58"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CHC";
+    public static final readonly Currency CHE
+                property "ads.attributeId" "59"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CHE";
+    public static final readonly Currency CHF
+                property "ads.attributeId" "60"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CHF";
+    public static final readonly Currency CHW
+                property "ads.attributeId" "61"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CHW";
+    public static final readonly Currency CLF
+                property "ads.attributeId" "62"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CLF";
+    public static final readonly Currency CLP
+                property "ads.attributeId" "63"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CLP";
+    public static final readonly Currency CNY
+                property "ads.attributeId" "64"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CNY";
+    public static final readonly Currency COP
+                property "ads.attributeId" "65"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COP";
+    public static final readonly Currency COU
+                property "ads.attributeId" "66"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COU";
+    public static final readonly Currency CRC
+                property "ads.attributeId" "67"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CRC";
+    public static final readonly Currency CSD
+                property "ads.attributeId" "68"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CSD";
+    public static final readonly Currency CSJ
+                property "ads.attributeId" "69"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CSJ";
+    public static final readonly Currency CSK
+                property "ads.attributeId" "70"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CSK";
+    public static final readonly Currency CUC
+                property "ads.attributeId" "71"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUC";
+    public static final readonly Currency CUP
+                property "ads.attributeId" "72"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUP";
+    public static final readonly Currency CVE
+                property "ads.attributeId" "73"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CVE";
+    public static final readonly Currency CYP
+                property "ads.attributeId" "74"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CYP";
+    public static final readonly Currency CZK
+                property "ads.attributeId" "75"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CZK";
+    public static final readonly Currency DDM
+                property "ads.attributeId" "76"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DDM";
+    public static final readonly Currency DEM
+                property "ads.attributeId" "77"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DEM";
+    public static final readonly Currency DJF
+                property "ads.attributeId" "78"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DJF";
+    public static final readonly Currency DKK
+                property "ads.attributeId" "79"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DKK";
+    public static final readonly Currency DOP
+                property "ads.attributeId" "80"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DOP";
+    public static final readonly Currency DZD
+                property "ads.attributeId" "81"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DZD";
+    public static final readonly Currency ECS
+                property "ads.attributeId" "82"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ECS";
+    public static final readonly Currency EEK
+                property "ads.attributeId" "83"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EEK";
+    public static final readonly Currency EGP
+                property "ads.attributeId" "84"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EGP";
+    public static final readonly Currency ERN
+                property "ads.attributeId" "85"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ERN";
+    public static final readonly Currency ESA
+                property "ads.attributeId" "86"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ESA";
+    public static final readonly Currency ETB
+                property "ads.attributeId" "88"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ETB";
+    public static final readonly Currency EUR
+                property "ads.attributeId" "89"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EUR";
+    public static final readonly Currency FIM
+                property "ads.attributeId" "90"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FIM";
+    public static final readonly Currency FJD
+                property "ads.attributeId" "91"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FJD";
+    public static final readonly Currency FKP
+                property "ads.attributeId" "92"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FKP";
+    public static final readonly Currency FRF
+                property "ads.attributeId" "93"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FRF";
+    public static final readonly Currency GBP
+                property "ads.attributeId" "94"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GBP";
+    public static final readonly Currency GEK
+                property "ads.attributeId" "95"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GEK";
+    public static final readonly Currency GEL
+                property "ads.attributeId" "96"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GEL";
+    public static final readonly Currency GHC
+                property "ads.attributeId" "97"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GHC";
+    public static final readonly Currency GHP
+                property "ads.attributeId" "98"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GHP";
+    public static final readonly Currency GIP
+                property "ads.attributeId" "100"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GIP";
+    public static final readonly Currency GMD
+                property "ads.attributeId" "101"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GMD";
+    public static final readonly Currency GNE
+                property "ads.attributeId" "102"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GNE";
+    public static final readonly Currency GNF
+                property "ads.attributeId" "103"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GNF";
+    public static final readonly Currency GQE
+                property "ads.attributeId" "105"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GQE";
+    public static final readonly Currency GRD
+                property "ads.attributeId" "106"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GRD";
+    public static final readonly Currency GTQ
+                property "ads.attributeId" "107"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GTQ";
+    public static final readonly Currency GWE
+                property "ads.attributeId" "108"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GWE";
+    public static final readonly Currency GWP
+                property "ads.attributeId" "109"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GWP";
+    public static final readonly Currency GYD
+                property "ads.attributeId" "110"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GYD";
+    public static final readonly Currency HKD
+                property "ads.attributeId" "111"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HKD";
+    public static final readonly Currency HNL
+                property "ads.attributeId" "112"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HNL";
+    public static final readonly Currency HRD
+                property "ads.attributeId" "113"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HRD";
+    public static final readonly Currency HRK
+                property "ads.attributeId" "114"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HRK";
+    public static final readonly Currency HTG
+                property "ads.attributeId" "115"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HTG";
+    public static final readonly Currency HUF
+                property "ads.attributeId" "116"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HUF";
+    public static final readonly Currency IDR
+                property "ads.attributeId" "117"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IDR";
+    public static final readonly Currency IEP
+                property "ads.attributeId" "118"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IEP";
+    public static final readonly Currency ILP
+                property "ads.attributeId" "119"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ILP";
+    public static final readonly Currency ILR
+                property "ads.attributeId" "120"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ILR";
+    public static final readonly Currency ILS
+                property "ads.attributeId" "121"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ILS";
+    public static final readonly Currency INR
+                property "ads.attributeId" "122"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INR";
+    public static final readonly Currency IQD
+                property "ads.attributeId" "123"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IQD";
+    public static final readonly Currency IRR
+                property "ads.attributeId" "124"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IRR";
+    public static final readonly Currency ISJ
+                property "ads.attributeId" "125"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ISJ";
+    public static final readonly Currency ISK
+                property "ads.attributeId" "126"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ISK";
+    public static final readonly Currency ITL
+                property "ads.attributeId" "127"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ITL";
+    public static final readonly Currency JMD
+                property "ads.attributeId" "128"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JMD";
+    public static final readonly Currency JOD
+                property "ads.attributeId" "129"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JOD";
+    public static final readonly Currency JPY
+                property "ads.attributeId" "130"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JPY";
+    public static final readonly Currency KES
+                property "ads.attributeId" "131"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KES";
+    public static final readonly Currency KGS
+                property "ads.attributeId" "132"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KGS";
+    public static final readonly Currency KHR
+                property "ads.attributeId" "133"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KHR";
+    public static final readonly Currency KMF
+                property "ads.attributeId" "134"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KMF";
+    public static final readonly Currency KPW
+                property "ads.attributeId" "135"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KPW";
+    public static final readonly Currency KRW
+                property "ads.attributeId" "136"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KRW";
+    public static final readonly Currency KWD
+                property "ads.attributeId" "137"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KWD";
+    public static final readonly Currency KYD
+                property "ads.attributeId" "138"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KYD";
+    public static final readonly Currency KZT
+                property "ads.attributeId" "139"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KZT";
+    public static final readonly Currency LAJ
+                property "ads.attributeId" "140"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LAJ";
+    public static final readonly Currency LAK
+                property "ads.attributeId" "141"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LAK";
+    public static final readonly Currency LBP
+                property "ads.attributeId" "142"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LBP";
+    public static final readonly Currency LKR
+                property "ads.attributeId" "143"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LKR";
+    public static final readonly Currency LRD
+                property "ads.attributeId" "144"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LRD";
+    public static final readonly Currency LSL
+                property "ads.attributeId" "145"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LSL";
+    public static final readonly Currency LTL
+                property "ads.attributeId" "147"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LTL";
+    public static final readonly Currency LTT
+                property "ads.attributeId" "148"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LTT";
+    public static final readonly Currency LUC
+                property "ads.attributeId" "149"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LUC";
+    public static final readonly Currency LUF
+                property "ads.attributeId" "150"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LUF";
+    public static final readonly Currency LUL
+                property "ads.attributeId" "151"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LUL";
+    public static final readonly Currency LVL
+                property "ads.attributeId" "152"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LVL";
+    public static final readonly Currency LVR
+                property "ads.attributeId" "153"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LVR";
+    public static final readonly Currency LYD
+                property "ads.attributeId" "154"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LYD";
+    public static final readonly Currency MAD
+                property "ads.attributeId" "155"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MAD";
+    public static final readonly Currency MDL
+                property "ads.attributeId" "156"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MDL";
+    public static final readonly Currency MGA
+                property "ads.attributeId" "157"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MGA";
+    public static final readonly Currency MGF
+                property "ads.attributeId" "158"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MGF";
+    public static final readonly Currency MKD
+                property "ads.attributeId" "159"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MKD";
+    public static final readonly Currency MLF
+                property "ads.attributeId" "160"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MLF";
+    public static final readonly Currency MNT
+                property "ads.attributeId" "162"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MNT";
+    public static final readonly Currency MOP
+                property "ads.attributeId" "163"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MOP";
+    public static final readonly Currency MRO
+                property "ads.attributeId" "164"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MRO";
+    public static final readonly Currency MTL
+                property "ads.attributeId" "166"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MTL";
+    public static final readonly Currency MTP
+                property "ads.attributeId" "167"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MTP";
+    public static final readonly Currency MUR
+                property "ads.attributeId" "168"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MUR";
+    public static final readonly Currency MVQ
+                property "ads.attributeId" "169"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MVQ";
+    public static final readonly Currency MVR
+                property "ads.attributeId" "170"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MVR";
+    public static final readonly Currency MWK
+                property "ads.attributeId" "171"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MWK";
+    public static final readonly Currency MXN
+                property "ads.attributeId" "172"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MXN";
+    public static final readonly Currency MXV
+                property "ads.attributeId" "174"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MXV";
+    public static final readonly Currency MYR
+                property "ads.attributeId" "175"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MYR";
+    public static final readonly Currency MZE
+                property "ads.attributeId" "176"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MZE";
+    public static final readonly Currency MZM
+                property "ads.attributeId" "177"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MZM";
+    public static final readonly Currency NAD
+                property "ads.attributeId" "179"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NAD";
+    public static final readonly Currency NGN
+                property "ads.attributeId" "180"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NGN";
+    public static final readonly Currency NIC
+                property "ads.attributeId" "181"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NIC";
+    public static final readonly Currency NIO
+                property "ads.attributeId" "182"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NIO";
+    public static final readonly Currency NLG
+                property "ads.attributeId" "183"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NLG";
+    public static final readonly Currency NOK
+                property "ads.attributeId" "184"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NOK";
+    public static final readonly Currency NPR
+                property "ads.attributeId" "185"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NPR";
+    public static final readonly Currency NZD
+                property "ads.attributeId" "186"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NZD";
+    public static final readonly Currency OMR
+                property "ads.attributeId" "187"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OMR";
+    public static final readonly Currency PAB
+                property "ads.attributeId" "188"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PAB";
+    public static final readonly Currency PEH
+                property "ads.attributeId" "189"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PEH";
+    public static final readonly Currency PEI
+                property "ads.attributeId" "190"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PEI";
+    public static final readonly Currency PGK
+                property "ads.attributeId" "193"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PGK";
+    public static final readonly Currency PHP
+                property "ads.attributeId" "194"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PHP";
+    public static final readonly Currency PKR
+                property "ads.attributeId" "195"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PKR";
+    public static final readonly Currency PLN
+                property "ads.attributeId" "196"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PLN";
+    public static final readonly Currency PTE
+                property "ads.attributeId" "198"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PTE";
+    public static final readonly Currency PYG
+                property "ads.attributeId" "199"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PYG";
+    public static final readonly Currency QAR
+                property "ads.attributeId" "200"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "QAR";
+    public static final readonly Currency RHD
+                property "ads.attributeId" "201"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RHD";
+    public static final readonly Currency ROK
+                property "ads.attributeId" "202"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ROK";
+    public static final readonly Currency ROL
+                property "ads.attributeId" "203"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ROL";
+    public static final readonly Currency RON
+                property "ads.attributeId" "204"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RON";
+    public static final readonly Currency RUB
+                property "ads.attributeId" "206"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RUB";
+    public static final readonly Currency RWF
+                property "ads.attributeId" "208"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RWF";
+    public static final readonly Currency SAR
+                property "ads.attributeId" "209"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SAR";
+    public static final readonly Currency SBD
+                property "ads.attributeId" "210"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SBD";
+    public static final readonly Currency SCR
+                property "ads.attributeId" "211"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SCR";
+    public static final readonly Currency SDD
+                property "ads.attributeId" "212"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SDD";
+    public static final readonly Currency SDG
+                property "ads.attributeId" "213"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SDG";
+    public static final readonly Currency SEK
+                property "ads.attributeId" "215"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SEK";
+    public static final readonly Currency SGD
+                property "ads.attributeId" "216"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SGD";
+    public static final readonly Currency SHP
+                property "ads.attributeId" "217"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SHP";
+    public static final readonly Currency SIT
+                property "ads.attributeId" "218"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SIT";
+    public static final readonly Currency SKK
+                property "ads.attributeId" "219"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SKK";
+    public static final readonly Currency SLL
+                property "ads.attributeId" "220"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SLL";
+    public static final readonly Currency SOS
+                property "ads.attributeId" "221"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SOS";
+    public static final readonly Currency SRD
+                property "ads.attributeId" "222"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SRD";
+    public static final readonly Currency SRG
+                property "ads.attributeId" "223"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SRG";
+    public static final readonly Currency SSP
+                property "ads.attributeId" "224"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SSP";
+    public static final readonly Currency STD
+                property "ads.attributeId" "225"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STD";
+    public static final readonly Currency SUR
+                property "ads.attributeId" "227"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SUR";
+    public static final readonly Currency SVC
+                property "ads.attributeId" "228"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SVC";
+    public static final readonly Currency SYP
+                property "ads.attributeId" "229"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SYP";
+    public static final readonly Currency SZL
+                property "ads.attributeId" "230"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SZL";
+    public static final readonly Currency THB
+                property "ads.attributeId" "231"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "THB";
+    public static final readonly Currency TJR
+                property "ads.attributeId" "232"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TJR";
+    public static final readonly Currency TJS
+                property "ads.attributeId" "233"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TJS";
+    public static final readonly Currency TMM
+                property "ads.attributeId" "234"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TMM";
+    public static final readonly Currency TMT
+                property "ads.attributeId" "235"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TMT";
+    public static final readonly Currency TND
+                property "ads.attributeId" "236"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TND";
+    public static final readonly Currency TOP
+                property "ads.attributeId" "237"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TOP";
+    public static final readonly Currency TPE
+                property "ads.attributeId" "238"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TPE";
+    public static final readonly Currency TRL
+                property "ads.attributeId" "239"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TRL";
+    public static final readonly Currency TRY
+                property "ads.attributeId" "240"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TRY";
+    public static final readonly Currency TTD
+                property "ads.attributeId" "241"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TTD";
+    public static final readonly Currency TWD
+                property "ads.attributeId" "242"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TWD";
+    public static final readonly Currency TZS
+                property "ads.attributeId" "243"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TZS";
+    public static final readonly Currency UAH
+                property "ads.attributeId" "244"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UAH";
+    public static final readonly Currency UAK
+                property "ads.attributeId" "245"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UAK";
+    public static final readonly Currency UGS
+                property "ads.attributeId" "246"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UGS";
+    public static final readonly Currency UGW
+                property "ads.attributeId" "247"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UGW";
+    public static final readonly Currency USD
+                property "ads.attributeId" "249"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "USD";
+    public static final readonly Currency USN
+                property "ads.attributeId" "250"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "USN";
+    public static final readonly Currency USS
+                property "ads.attributeId" "251"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "USS";
+    public static final readonly Currency UYI
+                property "ads.attributeId" "252"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UYI";
+    public static final readonly Currency UYN
+                property "ads.attributeId" "253"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UYN";
+    public static final readonly Currency UYP
+                property "ads.attributeId" "254"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UYP";
+    public static final readonly Currency UYU
+                property "ads.attributeId" "255"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UYU";
+    public static final readonly Currency UYW
+                property "ads.attributeId" "256"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UYW";
+    public static final readonly Currency UZS
+                property "ads.attributeId" "257"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UZS";
+    public static final readonly Currency VEB
+                property "ads.attributeId" "258"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VEB";
+    public static final readonly Currency VEF
+                property "ads.attributeId" "259"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VEF";
+    public static final readonly Currency VES
+                property "ads.attributeId" "260"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VES";
+    public static final readonly Currency VNC
+                property "ads.attributeId" "261"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VNC";
+    public static final readonly Currency VND
+                property "ads.attributeId" "262"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VND";
+    public static final readonly Currency VUV
+                property "ads.attributeId" "263"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VUV";
+    public static final readonly Currency WST
+                property "ads.attributeId" "264"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WST";
+    public static final readonly Currency XAF
+                property "ads.attributeId" "265"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XAF";
+    public static final readonly Currency XAG
+                property "ads.attributeId" "266"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XAG";
+    public static final readonly Currency XAU
+                property "ads.attributeId" "267"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XAU";
+    public static final readonly Currency XBA
+                property "ads.attributeId" "268"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XBA";
+    public static final readonly Currency XBB
+                property "ads.attributeId" "269"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XBB";
+    public static final readonly Currency XBC
+                property "ads.attributeId" "270"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XBC";
+    public static final readonly Currency XBD
+                property "ads.attributeId" "271"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XBD";
+    public static final readonly Currency XCD
+                property "ads.attributeId" "272"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XCD";
+    public static final readonly Currency XDR
+                property "ads.attributeId" "273"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XDR";
+    public static final readonly Currency XEU
+                property "ads.attributeId" "274"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XEU";
+    public static final readonly Currency XFO
+                property "ads.attributeId" "275"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XFO";
+    public static final readonly Currency XFU
+                property "ads.attributeId" "276"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XFU";
+    public static final readonly Currency XOF
+                property "ads.attributeId" "277"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XOF";
+    public static final readonly Currency XPD
+                property "ads.attributeId" "278"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XPD";
+    public static final readonly Currency XPF
+                property "ads.attributeId" "279"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XPF";
+    public static final readonly Currency XPT
+                property "ads.attributeId" "280"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XPT";
+    public static final readonly Currency XRE
+                property "ads.attributeId" "281"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XRE";
+    public static final readonly Currency XTS
+                property "ads.attributeId" "283"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XTS";
+    public static final readonly Currency XUA
+                property "ads.attributeId" "284"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XUA";
+    public static final readonly Currency XXX
+                property "ads.attributeId" "285"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XXX";
+    public static final readonly Currency YDD
+                property "ads.attributeId" "286"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YDD";
+    public static final readonly Currency YER
+                property "ads.attributeId" "287"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YER";
+    public static final readonly Currency YUD
+                property "ads.attributeId" "288"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YUD";
+    public static final readonly Currency YUM
+                property "ads.attributeId" "289"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YUM";
+    public static final readonly Currency YUN
+                property "ads.attributeId" "290"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YUN";
+    public static final readonly Currency ZAL
+                property "ads.attributeId" "291"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZAL";
+    public static final readonly Currency ZAR
+                property "ads.attributeId" "292"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZAR";
+    public static final readonly Currency ZMK
+                property "ads.attributeId" "293"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZMK";
+    public static final readonly Currency ZRN
+                property "ads.attributeId" "295"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZRN";
+    public static final readonly Currency ZRZ
+                property "ads.attributeId" "296"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZRZ";
+    public static final readonly Currency ZWD
+                property "ads.attributeId" "298"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZWD";
+}
+
+public class Customer
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Customer"
+        property "de.generated" "true"
+{
+    public string company
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "company"
+                property update "true";
+    public java.util.List contracts domain 0,* class Contract
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "contracts"
+                property update "true";
+    public string firstName
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "firstName"
+                property update "true";
+    public string lastName
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "lastName"
+                property update "true";
+    public Stock stock
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "stock"
+                property update "true";
+    public Customer(string company, 
+        java.util.List contracts domain 0,* class Contract, 
+        string firstName, 
+        string lastName, 
+        Stock stock)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Customer()
+                property "dataio.default" "true";
+    public void addTo_contracts(Contract contracts)
+                property collectionAttribute "contracts"
+                property update "true";
+    public void clear_contracts()
+                property collectionAttribute "contracts"
+                property update "true";
+    public void removeFrom_contracts(Contract contracts)
+                property collectionAttribute "contracts"
+                property update "true";
+    public void set_contracts(java.util.Collection contracts domain 0,* class Contract)
+                property collectionAttribute "contracts"
+                property update "true";
+}
+
+public class Milestone
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Milestone"
+        property "de.generated" "true"
+{
+    public boolean completed
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "completed"
+                property update "true";
+    public string name
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "name"
+                property update "true";
+    public Milestone(boolean completed, string name)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Milestone()
+                property "dataio.default" "true";
+}
+
+public class Stock
+        extends java.lang.Enum
+        property "ads.typeId" "6"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Stock"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property "de.generated" "true"
+        property domainProviderResource "domains/fortune500.xlsx"
+{
+    domain 
+    {
+        static A,
+        static AAL,
+        static AAP,
+        static AAPL,
+        static ABBV,
+        static ABC,
+        static ABMD,
+        static ABT,
+        static ACN,
+        static ADBE,
+        static ADI,
+        static ADM,
+        static ADP,
+        static ADSK,
+        static AEE,
+        static AEP,
+        static AES,
+        static AFL,
+        static AIG,
+        static AIZ,
+        static AJG,
+        static AKAM,
+        static ALB,
+        static ALGN,
+        static ALK,
+        static ALL,
+        static ALLE,
+        static ALXN,
+        static AMAT,
+        static AMCR,
+        static AMD,
+        static AME,
+        static AMGN,
+        static AMP,
+        static AMT,
+        static AMZN,
+        static ANET,
+        static ANSS,
+        static ANTM,
+        static AON,
+        static AOS,
+        static APA,
+        static APD,
+        static APH,
+        static APTV,
+        static ARE,
+        static ATO,
+        static ATVI,
+        static AVB,
+        static AVGO,
+        static AVY,
+        static AWK,
+        static AXP,
+        static AZO,
+        static BA,
+        static BAC,
+        static BAX,
+        static BBY,
+        static BDX,
+        static BEN,
+        static BFB,
+        static BIIB,
+        static BIO,
+        static BK,
+        static BKNG,
+        static BKR,
+        static BLK,
+        static BLL,
+        static BMY,
+        static BR,
+        static BRKB,
+        static BSX,
+        static BWA,
+        static BXP,
+        static C,
+        static CAG,
+        static CAH,
+        static CARR,
+        static CAT,
+        static CB,
+        static CBOE,
+        static CBRE,
+        static CCI,
+        static CCL,
+        static CDNS,
+        static CDW,
+        static CE,
+        static CERN,
+        static CF,
+        static CFG,
+        static CHD,
+        static CHRW,
+        static CHTR,
+        static CI,
+        static CINF,
+        static CL,
+        static CLX,
+        static CMA,
+        static CMCSA,
+        static CME,
+        static CMG,
+        static CMI,
+        static CMS,
+        static CNC,
+        static CNP,
+        static COF,
+        static COG,
+        static COO,
+        static COP,
+        static COST,
+        static CPB,
+        static CPRT,
+        static CRM,
+        static CSCO,
+        static CSX,
+        static CTAS,
+        static CTLT,
+        static CTSH,
+        static CTVA,
+        static CTXS,
+        static CVS,
+        static CVX,
+        static CZR,
+        static D,
+        static DAL,
+        static DD,
+        static DE,
+        static DFS,
+        static DG,
+        static DGX,
+        static DHI,
+        static DHR,
+        static DIS,
+        static DISCA,
+        static DISCK,
+        static DISH,
+        static DLR,
+        static DLTR,
+        static DOV,
+        static DOW,
+        static DPZ,
+        static DRE,
+        static DRI,
+        static DTE,
+        static DUK,
+        static DVA,
+        static DVN,
+        static DXC,
+        static DXCM,
+        static EA,
+        static EBAY,
+        static ECL,
+        static ED,
+        static EFX,
+        static EIX,
+        static EL,
+        static EMN,
+        static EMR,
+        static ENPH,
+        static EOG,
+        static EQIX,
+        static EQR,
+        static ES,
+        static ESS,
+        static ETN,
+        static ETR,
+        static ETSY,
+        static EVRG,
+        static EW,
+        static EXC,
+        static EXPD,
+        static EXPE,
+        static EXR,
+        static F,
+        static FANG,
+        static FAST,
+        static FB,
+        static FBHS,
+        static FCX,
+        static FDX,
+        static FE,
+        static FFIV,
+        static FIS,
+        static FISV,
+        static FITB,
+        static FLIR,
+        static FLT,
+        static FMC,
+        static FOX,
+        static FOXA,
+        static FRC,
+        static FRT,
+        static FTNT,
+        static FTV,
+        static GD,
+        static GE,
+        static GILD,
+        static GIS,
+        static GL,
+        static GLW,
+        static GM,
+        static GNRC,
+        static GOOG,
+        static GOOGL,
+        static GPC,
+        static GPN,
+        static GPS,
+        static GRMN,
+        static GS,
+        static GWW,
+        static HAL,
+        static HAS,
+        static HBAN,
+        static HBI,
+        static HCA,
+        static HD,
+        static HES,
+        static HFC,
+        static HIG,
+        static HII,
+        static HLT,
+        static HOLX,
+        static HON,
+        static HPE,
+        static HPQ,
+        static HRL,
+        static HSIC,
+        static HST,
+        static HSY,
+        static HUM,
+        static HWM,
+        static IBM,
+        static ICE,
+        static IDXX,
+        static IEX,
+        static IFF,
+        static ILMN,
+        static INCY,
+        static INFO,
+        static INTC,
+        static INTU,
+        static IP,
+        static IPG,
+        static IPGP,
+        static IQV,
+        static IR,
+        static IRM,
+        static ISRG,
+        static IT,
+        static ITW,
+        static IVZ,
+        static J,
+        static JBHT,
+        static JCI,
+        static JKHY,
+        static JNJ,
+        static JNPR,
+        static JPM,
+        static K,
+        static KEY,
+        static KEYS,
+        static KHC,
+        static KIM,
+        static KLAC,
+        static KMB,
+        static KMI,
+        static KMX,
+        static KO,
+        static KR,
+        static KSU,
+        static L,
+        static LB,
+        static LDOS,
+        static LEG,
+        static LEN,
+        static LH,
+        static LHX,
+        static LIN,
+        static LKQ,
+        static LLY,
+        static LMT,
+        static LNC,
+        static LNT,
+        static LOW,
+        static LRCX,
+        static LUMN,
+        static LUV,
+        static LVS,
+        static LW,
+        static LYB,
+        static LYV,
+        static MA,
+        static MAA,
+        static MAR,
+        static MAS,
+        static MCD,
+        static MCHP,
+        static MCK,
+        static MCO,
+        static MDLZ,
+        static MDT,
+        static MET,
+        static MGM,
+        static MHK,
+        static MKC,
+        static MKTX,
+        static MLM,
+        static MMC,
+        static MMM,
+        static MNST,
+        static MO,
+        static MOS,
+        static MPC,
+        static MPWR,
+        static MRK,
+        static MRO,
+        static MS,
+        static MSCI,
+        static MSFT,
+        static MSI,
+        static MTB,
+        static MTD,
+        static MU,
+        static MXIM,
+        static NCLH,
+        static NDAQ,
+        static NEE,
+        static NEM,
+        static NFLX,
+        static NI,
+        static NKE,
+        static NLOK,
+        static NLSN,
+        static NOC,
+        static NOV,
+        static NOW,
+        static NRG,
+        static NSC,
+        static NTAP,
+        static NTRS,
+        static NUE,
+        static NVDA,
+        static NVR,
+        static NWL,
+        static NWS,
+        static NWSA,
+        static NXPI,
+        static O,
+        static ODFL,
+        static OKE,
+        static OMC,
+        static ORCL,
+        static ORLY,
+        static OTIS,
+        static OXY,
+        static PAYC,
+        static PAYX,
+        static PBCT,
+        static PCAR,
+        static PEAK,
+        static PEG,
+        static PENN,
+        static PEP,
+        static PFE,
+        static PFG,
+        static PG,
+        static PGR,
+        static PH,
+        static PHM,
+        static PKG,
+        static PKI,
+        static PLD,
+        static PM,
+        static PNC,
+        static PNR,
+        static PNW,
+        static POOL,
+        static PPG,
+        static PPL,
+        static PRGO,
+        static PRU,
+        static PSA,
+        static PSX,
+        static PTC,
+        static PVH,
+        static PWR,
+        static PXD,
+        static PYPL,
+        static QCOM,
+        static QRVO,
+        static RCL,
+        static RE,
+        static REG,
+        static REGN,
+        static RF,
+        static RHI,
+        static RJF,
+        static RL,
+        static RMD,
+        static ROK,
+        static ROL,
+        static ROP,
+        static ROST,
+        static RSG,
+        static RTX,
+        static SBAC,
+        static SBUX,
+        static SCHW,
+        static SEE,
+        static SHW,
+        static SIVB,
+        static SJM,
+        static SLB,
+        static SNA,
+        static SNPS,
+        static SO,
+        static SPG,
+        static SPGI,
+        static SRE,
+        static STE,
+        static STT,
+        static STX,
+        static STZ,
+        static SWK,
+        static SWKS,
+        static SYF,
+        static SYK,
+        static SYY,
+        static T,
+        static TAP,
+        static TDG,
+        static TDY,
+        static TEL,
+        static TER,
+        static TFC,
+        static TFX,
+        static TGT,
+        static TJX,
+        static TMO,
+        static TMUS,
+        static TPR,
+        static TRMB,
+        static TROW,
+        static TRV,
+        static TSCO,
+        static TSLA,
+        static TSN,
+        static TT,
+        static TTWO,
+        static TWTR,
+        static TXN,
+        static TXT,
+        static TYL,
+        static UA,
+        static UAA,
+        static UAL,
+        static UDR,
+        static UHS,
+        static ULTA,
+        static UNH,
+        static UNM,
+        static UNP,
+        static UPS,
+        static URI,
+        static USB,
+        static V,
+        static VFC,
+        static VIAC,
+        static VLO,
+        static VMC,
+        static VNO,
+        static VRSK,
+        static VRSN,
+        static VRTX,
+        static VTR,
+        static VTRS,
+        static VZ,
+        static WAB,
+        static WAT,
+        static WBA,
+        static WDC,
+        static WEC,
+        static WELL,
+        static WFC,
+        static WHR,
+        static WLTW,
+        static WM,
+        static WMB,
+        static WMT,
+        static WRB,
+        static WRK,
+        static WST,
+        static WU,
+        static WY,
+        static WYNN,
+        static XEL,
+        static XLNX,
+        static XOM,
+        static XRAY,
+        static XYL,
+        static YUM,
+        static ZBH,
+        static ZBRA,
+        static ZION,
+        static ZTS
+    }
+    public static final readonly Stock A
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "A";
+    public static final readonly Stock AAL
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AAL";
+    public static final readonly Stock AAP
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AAP";
+    public static final readonly Stock AAPL
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AAPL";
+    public static final readonly Stock ABBV
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ABBV";
+    public static final readonly Stock ABC
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ABC";
+    public static final readonly Stock ABMD
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ABMD";
+    public static final readonly Stock ABT
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ABT";
+    public static final readonly Stock ACN
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ACN";
+    public static final readonly Stock ADBE
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADBE";
+    public static final readonly Stock ADI
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADI";
+    public static final readonly Stock ADM
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADM";
+    public static final readonly Stock ADP
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADP";
+    public static final readonly Stock ADSK
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ADSK";
+    public static final readonly Stock AEE
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AEE";
+    public static final readonly Stock AEP
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AEP";
+    public static final readonly Stock AES
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AES";
+    public static final readonly Stock AFL
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AFL";
+    public static final readonly Stock AIG
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AIG";
+    public static final readonly Stock AIZ
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AIZ";
+    public static final readonly Stock AJG
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AJG";
+    public static final readonly Stock AKAM
+                property "ads.attributeId" "23"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AKAM";
+    public static final readonly Stock ALB
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALB";
+    public static final readonly Stock ALGN
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALGN";
+    public static final readonly Stock ALK
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALK";
+    public static final readonly Stock ALL
+                property "ads.attributeId" "27"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALL";
+    public static final readonly Stock ALLE
+                property "ads.attributeId" "28"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALLE";
+    public static final readonly Stock ALXN
+                property "ads.attributeId" "29"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ALXN";
+    public static final readonly Stock AMAT
+                property "ads.attributeId" "30"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMAT";
+    public static final readonly Stock AMCR
+                property "ads.attributeId" "31"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMCR";
+    public static final readonly Stock AMD
+                property "ads.attributeId" "32"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMD";
+    public static final readonly Stock AME
+                property "ads.attributeId" "33"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AME";
+    public static final readonly Stock AMGN
+                property "ads.attributeId" "34"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMGN";
+    public static final readonly Stock AMP
+                property "ads.attributeId" "35"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMP";
+    public static final readonly Stock AMT
+                property "ads.attributeId" "36"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMT";
+    public static final readonly Stock AMZN
+                property "ads.attributeId" "37"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMZN";
+    public static final readonly Stock ANET
+                property "ads.attributeId" "38"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ANET";
+    public static final readonly Stock ANSS
+                property "ads.attributeId" "39"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ANSS";
+    public static final readonly Stock ANTM
+                property "ads.attributeId" "40"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ANTM";
+    public static final readonly Stock AON
+                property "ads.attributeId" "41"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AON";
+    public static final readonly Stock AOS
+                property "ads.attributeId" "42"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AOS";
+    public static final readonly Stock APA
+                property "ads.attributeId" "43"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "APA";
+    public static final readonly Stock APD
+                property "ads.attributeId" "44"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "APD";
+    public static final readonly Stock APH
+                property "ads.attributeId" "45"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "APH";
+    public static final readonly Stock APTV
+                property "ads.attributeId" "46"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "APTV";
+    public static final readonly Stock ARE
+                property "ads.attributeId" "47"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ARE";
+    public static final readonly Stock ATO
+                property "ads.attributeId" "48"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ATO";
+    public static final readonly Stock ATVI
+                property "ads.attributeId" "49"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ATVI";
+    public static final readonly Stock AVB
+                property "ads.attributeId" "50"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AVB";
+    public static final readonly Stock AVGO
+                property "ads.attributeId" "51"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AVGO";
+    public static final readonly Stock AVY
+                property "ads.attributeId" "52"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AVY";
+    public static final readonly Stock AWK
+                property "ads.attributeId" "53"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AWK";
+    public static final readonly Stock AXP
+                property "ads.attributeId" "54"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AXP";
+    public static final readonly Stock AZO
+                property "ads.attributeId" "55"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AZO";
+    public static final readonly Stock BA
+                property "ads.attributeId" "56"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BA";
+    public static final readonly Stock BAC
+                property "ads.attributeId" "57"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BAC";
+    public static final readonly Stock BAX
+                property "ads.attributeId" "58"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BAX";
+    public static final readonly Stock BBY
+                property "ads.attributeId" "59"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BBY";
+    public static final readonly Stock BDX
+                property "ads.attributeId" "60"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BDX";
+    public static final readonly Stock BEN
+                property "ads.attributeId" "61"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BEN";
+    public static final readonly Stock BFB
+                property "ads.attributeId" "62"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BFB";
+    public static final readonly Stock BIIB
+                property "ads.attributeId" "63"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BIIB";
+    public static final readonly Stock BIO
+                property "ads.attributeId" "64"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BIO";
+    public static final readonly Stock BK
+                property "ads.attributeId" "65"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BK";
+    public static final readonly Stock BKNG
+                property "ads.attributeId" "66"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BKNG";
+    public static final readonly Stock BKR
+                property "ads.attributeId" "67"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BKR";
+    public static final readonly Stock BLK
+                property "ads.attributeId" "68"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BLK";
+    public static final readonly Stock BLL
+                property "ads.attributeId" "69"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BLL";
+    public static final readonly Stock BMY
+                property "ads.attributeId" "70"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BMY";
+    public static final readonly Stock BR
+                property "ads.attributeId" "71"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BR";
+    public static final readonly Stock BRKB
+                property "ads.attributeId" "72"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BRKB";
+    public static final readonly Stock BSX
+                property "ads.attributeId" "73"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BSX";
+    public static final readonly Stock BWA
+                property "ads.attributeId" "74"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BWA";
+    public static final readonly Stock BXP
+                property "ads.attributeId" "75"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BXP";
+    public static final readonly Stock C
+                property "ads.attributeId" "76"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "C";
+    public static final readonly Stock CAG
+                property "ads.attributeId" "77"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CAG";
+    public static final readonly Stock CAH
+                property "ads.attributeId" "78"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CAH";
+    public static final readonly Stock CARR
+                property "ads.attributeId" "79"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CARR";
+    public static final readonly Stock CAT
+                property "ads.attributeId" "80"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CAT";
+    public static final readonly Stock CB
+                property "ads.attributeId" "81"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CB";
+    public static final readonly Stock CBOE
+                property "ads.attributeId" "82"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CBOE";
+    public static final readonly Stock CBRE
+                property "ads.attributeId" "83"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CBRE";
+    public static final readonly Stock CCI
+                property "ads.attributeId" "84"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CCI";
+    public static final readonly Stock CCL
+                property "ads.attributeId" "85"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CCL";
+    public static final readonly Stock CDNS
+                property "ads.attributeId" "86"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CDNS";
+    public static final readonly Stock CDW
+                property "ads.attributeId" "87"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CDW";
+    public static final readonly Stock CE
+                property "ads.attributeId" "88"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CE";
+    public static final readonly Stock CERN
+                property "ads.attributeId" "89"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CERN";
+    public static final readonly Stock CF
+                property "ads.attributeId" "90"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CF";
+    public static final readonly Stock CFG
+                property "ads.attributeId" "91"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CFG";
+    public static final readonly Stock CHD
+                property "ads.attributeId" "92"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CHD";
+    public static final readonly Stock CHRW
+                property "ads.attributeId" "93"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CHRW";
+    public static final readonly Stock CHTR
+                property "ads.attributeId" "94"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CHTR";
+    public static final readonly Stock CI
+                property "ads.attributeId" "95"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CI";
+    public static final readonly Stock CINF
+                property "ads.attributeId" "96"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CINF";
+    public static final readonly Stock CL
+                property "ads.attributeId" "97"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CL";
+    public static final readonly Stock CLX
+                property "ads.attributeId" "98"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CLX";
+    public static final readonly Stock CMA
+                property "ads.attributeId" "99"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CMA";
+    public static final readonly Stock CMCSA
+                property "ads.attributeId" "100"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CMCSA";
+    public static final readonly Stock CME
+                property "ads.attributeId" "101"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CME";
+    public static final readonly Stock CMG
+                property "ads.attributeId" "102"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CMG";
+    public static final readonly Stock CMI
+                property "ads.attributeId" "103"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CMI";
+    public static final readonly Stock CMS
+                property "ads.attributeId" "104"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CMS";
+    public static final readonly Stock CNC
+                property "ads.attributeId" "105"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CNC";
+    public static final readonly Stock CNP
+                property "ads.attributeId" "106"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CNP";
+    public static final readonly Stock COF
+                property "ads.attributeId" "107"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COF";
+    public static final readonly Stock COG
+                property "ads.attributeId" "108"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COG";
+    public static final readonly Stock COO
+                property "ads.attributeId" "109"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COO";
+    public static final readonly Stock COP
+                property "ads.attributeId" "110"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COP";
+    public static final readonly Stock COST
+                property "ads.attributeId" "111"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COST";
+    public static final readonly Stock CPB
+                property "ads.attributeId" "112"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CPB";
+    public static final readonly Stock CPRT
+                property "ads.attributeId" "113"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CPRT";
+    public static final readonly Stock CRM
+                property "ads.attributeId" "114"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CRM";
+    public static final readonly Stock CSCO
+                property "ads.attributeId" "115"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CSCO";
+    public static final readonly Stock CSX
+                property "ads.attributeId" "116"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CSX";
+    public static final readonly Stock CTAS
+                property "ads.attributeId" "117"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CTAS";
+    public static final readonly Stock CTLT
+                property "ads.attributeId" "118"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CTLT";
+    public static final readonly Stock CTSH
+                property "ads.attributeId" "119"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CTSH";
+    public static final readonly Stock CTVA
+                property "ads.attributeId" "120"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CTVA";
+    public static final readonly Stock CTXS
+                property "ads.attributeId" "121"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CTXS";
+    public static final readonly Stock CVS
+                property "ads.attributeId" "122"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CVS";
+    public static final readonly Stock CVX
+                property "ads.attributeId" "123"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CVX";
+    public static final readonly Stock CZR
+                property "ads.attributeId" "124"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CZR";
+    public static final readonly Stock D
+                property "ads.attributeId" "125"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "D";
+    public static final readonly Stock DAL
+                property "ads.attributeId" "126"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DAL";
+    public static final readonly Stock DD
+                property "ads.attributeId" "127"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DD";
+    public static final readonly Stock DE
+                property "ads.attributeId" "128"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DE";
+    public static final readonly Stock DFS
+                property "ads.attributeId" "129"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DFS";
+    public static final readonly Stock DG
+                property "ads.attributeId" "130"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DG";
+    public static final readonly Stock DGX
+                property "ads.attributeId" "131"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DGX";
+    public static final readonly Stock DHI
+                property "ads.attributeId" "132"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DHI";
+    public static final readonly Stock DHR
+                property "ads.attributeId" "133"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DHR";
+    public static final readonly Stock DIS
+                property "ads.attributeId" "134"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DIS";
+    public static final readonly Stock DISCA
+                property "ads.attributeId" "135"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DISCA";
+    public static final readonly Stock DISCK
+                property "ads.attributeId" "136"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DISCK";
+    public static final readonly Stock DISH
+                property "ads.attributeId" "137"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DISH";
+    public static final readonly Stock DLR
+                property "ads.attributeId" "138"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DLR";
+    public static final readonly Stock DLTR
+                property "ads.attributeId" "139"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DLTR";
+    public static final readonly Stock DOV
+                property "ads.attributeId" "140"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DOV";
+    public static final readonly Stock DOW
+                property "ads.attributeId" "141"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DOW";
+    public static final readonly Stock DPZ
+                property "ads.attributeId" "142"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DPZ";
+    public static final readonly Stock DRE
+                property "ads.attributeId" "143"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DRE";
+    public static final readonly Stock DRI
+                property "ads.attributeId" "144"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DRI";
+    public static final readonly Stock DTE
+                property "ads.attributeId" "145"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DTE";
+    public static final readonly Stock DUK
+                property "ads.attributeId" "146"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DUK";
+    public static final readonly Stock DVA
+                property "ads.attributeId" "147"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DVA";
+    public static final readonly Stock DVN
+                property "ads.attributeId" "148"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DVN";
+    public static final readonly Stock DXC
+                property "ads.attributeId" "149"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DXC";
+    public static final readonly Stock DXCM
+                property "ads.attributeId" "150"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "DXCM";
+    public static final readonly Stock EA
+                property "ads.attributeId" "151"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EA";
+    public static final readonly Stock EBAY
+                property "ads.attributeId" "152"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EBAY";
+    public static final readonly Stock ECL
+                property "ads.attributeId" "153"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ECL";
+    public static final readonly Stock ED
+                property "ads.attributeId" "154"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ED";
+    public static final readonly Stock EFX
+                property "ads.attributeId" "155"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EFX";
+    public static final readonly Stock EIX
+                property "ads.attributeId" "156"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EIX";
+    public static final readonly Stock EL
+                property "ads.attributeId" "157"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EL";
+    public static final readonly Stock EMN
+                property "ads.attributeId" "158"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EMN";
+    public static final readonly Stock EMR
+                property "ads.attributeId" "159"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EMR";
+    public static final readonly Stock ENPH
+                property "ads.attributeId" "160"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ENPH";
+    public static final readonly Stock EOG
+                property "ads.attributeId" "161"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EOG";
+    public static final readonly Stock EQIX
+                property "ads.attributeId" "162"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EQIX";
+    public static final readonly Stock EQR
+                property "ads.attributeId" "163"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EQR";
+    public static final readonly Stock ES
+                property "ads.attributeId" "164"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ES";
+    public static final readonly Stock ESS
+                property "ads.attributeId" "165"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ESS";
+    public static final readonly Stock ETN
+                property "ads.attributeId" "166"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ETN";
+    public static final readonly Stock ETR
+                property "ads.attributeId" "167"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ETR";
+    public static final readonly Stock ETSY
+                property "ads.attributeId" "168"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ETSY";
+    public static final readonly Stock EVRG
+                property "ads.attributeId" "169"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EVRG";
+    public static final readonly Stock EW
+                property "ads.attributeId" "170"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EW";
+    public static final readonly Stock EXC
+                property "ads.attributeId" "171"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EXC";
+    public static final readonly Stock EXPD
+                property "ads.attributeId" "172"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EXPD";
+    public static final readonly Stock EXPE
+                property "ads.attributeId" "173"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EXPE";
+    public static final readonly Stock EXR
+                property "ads.attributeId" "174"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "EXR";
+    public static final readonly Stock F
+                property "ads.attributeId" "175"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "F";
+    public static final readonly Stock FANG
+                property "ads.attributeId" "176"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FANG";
+    public static final readonly Stock FAST
+                property "ads.attributeId" "177"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FAST";
+    public static final readonly Stock FB
+                property "ads.attributeId" "178"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FB";
+    public static final readonly Stock FBHS
+                property "ads.attributeId" "179"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FBHS";
+    public static final readonly Stock FCX
+                property "ads.attributeId" "180"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FCX";
+    public static final readonly Stock FDX
+                property "ads.attributeId" "181"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FDX";
+    public static final readonly Stock FE
+                property "ads.attributeId" "182"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FE";
+    public static final readonly Stock FFIV
+                property "ads.attributeId" "183"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FFIV";
+    public static final readonly Stock FIS
+                property "ads.attributeId" "184"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FIS";
+    public static final readonly Stock FISV
+                property "ads.attributeId" "185"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FISV";
+    public static final readonly Stock FITB
+                property "ads.attributeId" "186"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FITB";
+    public static final readonly Stock FLIR
+                property "ads.attributeId" "187"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FLIR";
+    public static final readonly Stock FLT
+                property "ads.attributeId" "188"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FLT";
+    public static final readonly Stock FMC
+                property "ads.attributeId" "189"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FMC";
+    public static final readonly Stock FOX
+                property "ads.attributeId" "190"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FOX";
+    public static final readonly Stock FOXA
+                property "ads.attributeId" "191"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FOXA";
+    public static final readonly Stock FRC
+                property "ads.attributeId" "192"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FRC";
+    public static final readonly Stock FRT
+                property "ads.attributeId" "193"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FRT";
+    public static final readonly Stock FTNT
+                property "ads.attributeId" "194"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FTNT";
+    public static final readonly Stock FTV
+                property "ads.attributeId" "195"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FTV";
+    public static final readonly Stock GD
+                property "ads.attributeId" "196"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GD";
+    public static final readonly Stock GE
+                property "ads.attributeId" "197"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GE";
+    public static final readonly Stock GILD
+                property "ads.attributeId" "198"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GILD";
+    public static final readonly Stock GIS
+                property "ads.attributeId" "199"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GIS";
+    public static final readonly Stock GL
+                property "ads.attributeId" "200"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GL";
+    public static final readonly Stock GLW
+                property "ads.attributeId" "201"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GLW";
+    public static final readonly Stock GM
+                property "ads.attributeId" "202"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GM";
+    public static final readonly Stock GNRC
+                property "ads.attributeId" "203"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GNRC";
+    public static final readonly Stock GOOG
+                property "ads.attributeId" "204"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GOOG";
+    public static final readonly Stock GOOGL
+                property "ads.attributeId" "205"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GOOGL";
+    public static final readonly Stock GPC
+                property "ads.attributeId" "206"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GPC";
+    public static final readonly Stock GPN
+                property "ads.attributeId" "207"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GPN";
+    public static final readonly Stock GPS
+                property "ads.attributeId" "208"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GPS";
+    public static final readonly Stock GRMN
+                property "ads.attributeId" "209"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GRMN";
+    public static final readonly Stock GS
+                property "ads.attributeId" "210"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GS";
+    public static final readonly Stock GWW
+                property "ads.attributeId" "211"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GWW";
+    public static final readonly Stock HAL
+                property "ads.attributeId" "212"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HAL";
+    public static final readonly Stock HAS
+                property "ads.attributeId" "213"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HAS";
+    public static final readonly Stock HBAN
+                property "ads.attributeId" "214"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HBAN";
+    public static final readonly Stock HBI
+                property "ads.attributeId" "215"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HBI";
+    public static final readonly Stock HCA
+                property "ads.attributeId" "216"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HCA";
+    public static final readonly Stock HD
+                property "ads.attributeId" "217"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HD";
+    public static final readonly Stock HES
+                property "ads.attributeId" "218"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HES";
+    public static final readonly Stock HFC
+                property "ads.attributeId" "219"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HFC";
+    public static final readonly Stock HIG
+                property "ads.attributeId" "220"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HIG";
+    public static final readonly Stock HII
+                property "ads.attributeId" "221"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HII";
+    public static final readonly Stock HLT
+                property "ads.attributeId" "222"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HLT";
+    public static final readonly Stock HOLX
+                property "ads.attributeId" "223"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HOLX";
+    public static final readonly Stock HON
+                property "ads.attributeId" "224"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HON";
+    public static final readonly Stock HPE
+                property "ads.attributeId" "225"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HPE";
+    public static final readonly Stock HPQ
+                property "ads.attributeId" "226"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HPQ";
+    public static final readonly Stock HRL
+                property "ads.attributeId" "227"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HRL";
+    public static final readonly Stock HSIC
+                property "ads.attributeId" "228"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HSIC";
+    public static final readonly Stock HST
+                property "ads.attributeId" "229"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HST";
+    public static final readonly Stock HSY
+                property "ads.attributeId" "230"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HSY";
+    public static final readonly Stock HUM
+                property "ads.attributeId" "231"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HUM";
+    public static final readonly Stock HWM
+                property "ads.attributeId" "232"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HWM";
+    public static final readonly Stock IBM
+                property "ads.attributeId" "233"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IBM";
+    public static final readonly Stock ICE
+                property "ads.attributeId" "234"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ICE";
+    public static final readonly Stock IDXX
+                property "ads.attributeId" "235"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IDXX";
+    public static final readonly Stock IEX
+                property "ads.attributeId" "236"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IEX";
+    public static final readonly Stock IFF
+                property "ads.attributeId" "237"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IFF";
+    public static final readonly Stock ILMN
+                property "ads.attributeId" "238"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ILMN";
+    public static final readonly Stock INCY
+                property "ads.attributeId" "239"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INCY";
+    public static final readonly Stock INFO
+                property "ads.attributeId" "240"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INFO";
+    public static final readonly Stock INTC
+                property "ads.attributeId" "241"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INTC";
+    public static final readonly Stock INTU
+                property "ads.attributeId" "242"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INTU";
+    public static final readonly Stock IP
+                property "ads.attributeId" "243"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IP";
+    public static final readonly Stock IPG
+                property "ads.attributeId" "244"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IPG";
+    public static final readonly Stock IPGP
+                property "ads.attributeId" "245"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IPGP";
+    public static final readonly Stock IQV
+                property "ads.attributeId" "246"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IQV";
+    public static final readonly Stock IR
+                property "ads.attributeId" "247"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IR";
+    public static final readonly Stock IRM
+                property "ads.attributeId" "248"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IRM";
+    public static final readonly Stock ISRG
+                property "ads.attributeId" "249"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ISRG";
+    public static final readonly Stock IT
+                property "ads.attributeId" "250"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IT";
+    public static final readonly Stock ITW
+                property "ads.attributeId" "251"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ITW";
+    public static final readonly Stock IVZ
+                property "ads.attributeId" "252"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "IVZ";
+    public static final readonly Stock J
+                property "ads.attributeId" "253"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "J";
+    public static final readonly Stock JBHT
+                property "ads.attributeId" "254"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JBHT";
+    public static final readonly Stock JCI
+                property "ads.attributeId" "255"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JCI";
+    public static final readonly Stock JKHY
+                property "ads.attributeId" "256"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JKHY";
+    public static final readonly Stock JNJ
+                property "ads.attributeId" "257"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JNJ";
+    public static final readonly Stock JNPR
+                property "ads.attributeId" "258"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JNPR";
+    public static final readonly Stock JPM
+                property "ads.attributeId" "259"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "JPM";
+    public static final readonly Stock K
+                property "ads.attributeId" "260"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "K";
+    public static final readonly Stock KEY
+                property "ads.attributeId" "261"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KEY";
+    public static final readonly Stock KEYS
+                property "ads.attributeId" "262"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KEYS";
+    public static final readonly Stock KHC
+                property "ads.attributeId" "263"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KHC";
+    public static final readonly Stock KIM
+                property "ads.attributeId" "264"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KIM";
+    public static final readonly Stock KLAC
+                property "ads.attributeId" "265"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KLAC";
+    public static final readonly Stock KMB
+                property "ads.attributeId" "266"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KMB";
+    public static final readonly Stock KMI
+                property "ads.attributeId" "267"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KMI";
+    public static final readonly Stock KMX
+                property "ads.attributeId" "268"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KMX";
+    public static final readonly Stock KO
+                property "ads.attributeId" "269"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KO";
+    public static final readonly Stock KR
+                property "ads.attributeId" "270"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KR";
+    public static final readonly Stock KSU
+                property "ads.attributeId" "271"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "KSU";
+    public static final readonly Stock L
+                property "ads.attributeId" "272"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "L";
+    public static final readonly Stock LB
+                property "ads.attributeId" "273"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LB";
+    public static final readonly Stock LDOS
+                property "ads.attributeId" "274"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LDOS";
+    public static final readonly Stock LEG
+                property "ads.attributeId" "275"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LEG";
+    public static final readonly Stock LEN
+                property "ads.attributeId" "276"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LEN";
+    public static final readonly Stock LH
+                property "ads.attributeId" "277"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LH";
+    public static final readonly Stock LHX
+                property "ads.attributeId" "278"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LHX";
+    public static final readonly Stock LIN
+                property "ads.attributeId" "279"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LIN";
+    public static final readonly Stock LKQ
+                property "ads.attributeId" "280"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LKQ";
+    public static final readonly Stock LLY
+                property "ads.attributeId" "281"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LLY";
+    public static final readonly Stock LMT
+                property "ads.attributeId" "282"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LMT";
+    public static final readonly Stock LNC
+                property "ads.attributeId" "283"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LNC";
+    public static final readonly Stock LNT
+                property "ads.attributeId" "284"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LNT";
+    public static final readonly Stock LOW
+                property "ads.attributeId" "285"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LOW";
+    public static final readonly Stock LRCX
+                property "ads.attributeId" "286"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LRCX";
+    public static final readonly Stock LUMN
+                property "ads.attributeId" "287"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LUMN";
+    public static final readonly Stock LUV
+                property "ads.attributeId" "288"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LUV";
+    public static final readonly Stock LVS
+                property "ads.attributeId" "289"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LVS";
+    public static final readonly Stock LW
+                property "ads.attributeId" "290"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LW";
+    public static final readonly Stock LYB
+                property "ads.attributeId" "291"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LYB";
+    public static final readonly Stock LYV
+                property "ads.attributeId" "292"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "LYV";
+    public static final readonly Stock MA
+                property "ads.attributeId" "293"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MA";
+    public static final readonly Stock MAA
+                property "ads.attributeId" "294"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MAA";
+    public static final readonly Stock MAR
+                property "ads.attributeId" "295"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MAR";
+    public static final readonly Stock MAS
+                property "ads.attributeId" "296"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MAS";
+    public static final readonly Stock MCD
+                property "ads.attributeId" "297"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MCD";
+    public static final readonly Stock MCHP
+                property "ads.attributeId" "298"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MCHP";
+    public static final readonly Stock MCK
+                property "ads.attributeId" "299"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MCK";
+    public static final readonly Stock MCO
+                property "ads.attributeId" "300"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MCO";
+    public static final readonly Stock MDLZ
+                property "ads.attributeId" "301"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MDLZ";
+    public static final readonly Stock MDT
+                property "ads.attributeId" "302"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MDT";
+    public static final readonly Stock MET
+                property "ads.attributeId" "303"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MET";
+    public static final readonly Stock MGM
+                property "ads.attributeId" "304"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MGM";
+    public static final readonly Stock MHK
+                property "ads.attributeId" "305"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MHK";
+    public static final readonly Stock MKC
+                property "ads.attributeId" "306"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MKC";
+    public static final readonly Stock MKTX
+                property "ads.attributeId" "307"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MKTX";
+    public static final readonly Stock MLM
+                property "ads.attributeId" "308"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MLM";
+    public static final readonly Stock MMC
+                property "ads.attributeId" "309"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MMC";
+    public static final readonly Stock MMM
+                property "ads.attributeId" "310"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MMM";
+    public static final readonly Stock MNST
+                property "ads.attributeId" "311"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MNST";
+    public static final readonly Stock MO
+                property "ads.attributeId" "312"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MO";
+    public static final readonly Stock MOS
+                property "ads.attributeId" "313"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MOS";
+    public static final readonly Stock MPC
+                property "ads.attributeId" "314"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MPC";
+    public static final readonly Stock MPWR
+                property "ads.attributeId" "315"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MPWR";
+    public static final readonly Stock MRK
+                property "ads.attributeId" "316"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MRK";
+    public static final readonly Stock MRO
+                property "ads.attributeId" "317"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MRO";
+    public static final readonly Stock MS
+                property "ads.attributeId" "318"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MS";
+    public static final readonly Stock MSCI
+                property "ads.attributeId" "319"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MSCI";
+    public static final readonly Stock MSFT
+                property "ads.attributeId" "320"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MSFT";
+    public static final readonly Stock MSI
+                property "ads.attributeId" "321"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MSI";
+    public static final readonly Stock MTB
+                property "ads.attributeId" "322"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MTB";
+    public static final readonly Stock MTD
+                property "ads.attributeId" "323"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MTD";
+    public static final readonly Stock MU
+                property "ads.attributeId" "324"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MU";
+    public static final readonly Stock MXIM
+                property "ads.attributeId" "325"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MXIM";
+    public static final readonly Stock NCLH
+                property "ads.attributeId" "326"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NCLH";
+    public static final readonly Stock NDAQ
+                property "ads.attributeId" "327"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NDAQ";
+    public static final readonly Stock NEE
+                property "ads.attributeId" "328"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NEE";
+    public static final readonly Stock NEM
+                property "ads.attributeId" "329"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NEM";
+    public static final readonly Stock NFLX
+                property "ads.attributeId" "330"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NFLX";
+    public static final readonly Stock NI
+                property "ads.attributeId" "331"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NI";
+    public static final readonly Stock NKE
+                property "ads.attributeId" "332"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NKE";
+    public static final readonly Stock NLOK
+                property "ads.attributeId" "333"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NLOK";
+    public static final readonly Stock NLSN
+                property "ads.attributeId" "334"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NLSN";
+    public static final readonly Stock NOC
+                property "ads.attributeId" "335"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NOC";
+    public static final readonly Stock NOV
+                property "ads.attributeId" "336"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NOV";
+    public static final readonly Stock NOW
+                property "ads.attributeId" "337"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NOW";
+    public static final readonly Stock NRG
+                property "ads.attributeId" "338"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NRG";
+    public static final readonly Stock NSC
+                property "ads.attributeId" "339"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NSC";
+    public static final readonly Stock NTAP
+                property "ads.attributeId" "340"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NTAP";
+    public static final readonly Stock NTRS
+                property "ads.attributeId" "341"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NTRS";
+    public static final readonly Stock NUE
+                property "ads.attributeId" "342"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NUE";
+    public static final readonly Stock NVDA
+                property "ads.attributeId" "343"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NVDA";
+    public static final readonly Stock NVR
+                property "ads.attributeId" "344"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NVR";
+    public static final readonly Stock NWL
+                property "ads.attributeId" "345"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NWL";
+    public static final readonly Stock NWS
+                property "ads.attributeId" "346"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NWS";
+    public static final readonly Stock NWSA
+                property "ads.attributeId" "347"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NWSA";
+    public static final readonly Stock NXPI
+                property "ads.attributeId" "348"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "NXPI";
+    public static final readonly Stock O
+                property "ads.attributeId" "349"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "O";
+    public static final readonly Stock ODFL
+                property "ads.attributeId" "350"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ODFL";
+    public static final readonly Stock OKE
+                property "ads.attributeId" "351"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OKE";
+    public static final readonly Stock OMC
+                property "ads.attributeId" "352"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OMC";
+    public static final readonly Stock ORCL
+                property "ads.attributeId" "353"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ORCL";
+    public static final readonly Stock ORLY
+                property "ads.attributeId" "354"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ORLY";
+    public static final readonly Stock OTIS
+                property "ads.attributeId" "355"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OTIS";
+    public static final readonly Stock OXY
+                property "ads.attributeId" "356"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OXY";
+    public static final readonly Stock PAYC
+                property "ads.attributeId" "357"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PAYC";
+    public static final readonly Stock PAYX
+                property "ads.attributeId" "358"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PAYX";
+    public static final readonly Stock PBCT
+                property "ads.attributeId" "359"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PBCT";
+    public static final readonly Stock PCAR
+                property "ads.attributeId" "360"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PCAR";
+    public static final readonly Stock PEAK
+                property "ads.attributeId" "361"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PEAK";
+    public static final readonly Stock PEG
+                property "ads.attributeId" "362"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PEG";
+    public static final readonly Stock PENN
+                property "ads.attributeId" "363"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PENN";
+    public static final readonly Stock PEP
+                property "ads.attributeId" "364"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PEP";
+    public static final readonly Stock PFE
+                property "ads.attributeId" "365"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PFE";
+    public static final readonly Stock PFG
+                property "ads.attributeId" "366"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PFG";
+    public static final readonly Stock PG
+                property "ads.attributeId" "367"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PG";
+    public static final readonly Stock PGR
+                property "ads.attributeId" "368"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PGR";
+    public static final readonly Stock PH
+                property "ads.attributeId" "369"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PH";
+    public static final readonly Stock PHM
+                property "ads.attributeId" "370"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PHM";
+    public static final readonly Stock PKG
+                property "ads.attributeId" "371"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PKG";
+    public static final readonly Stock PKI
+                property "ads.attributeId" "372"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PKI";
+    public static final readonly Stock PLD
+                property "ads.attributeId" "373"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PLD";
+    public static final readonly Stock PM
+                property "ads.attributeId" "374"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PM";
+    public static final readonly Stock PNC
+                property "ads.attributeId" "375"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PNC";
+    public static final readonly Stock PNR
+                property "ads.attributeId" "376"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PNR";
+    public static final readonly Stock PNW
+                property "ads.attributeId" "377"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PNW";
+    public static final readonly Stock POOL
+                property "ads.attributeId" "378"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "POOL";
+    public static final readonly Stock PPG
+                property "ads.attributeId" "379"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PPG";
+    public static final readonly Stock PPL
+                property "ads.attributeId" "380"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PPL";
+    public static final readonly Stock PRGO
+                property "ads.attributeId" "381"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PRGO";
+    public static final readonly Stock PRU
+                property "ads.attributeId" "382"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PRU";
+    public static final readonly Stock PSA
+                property "ads.attributeId" "383"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PSA";
+    public static final readonly Stock PSX
+                property "ads.attributeId" "384"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PSX";
+    public static final readonly Stock PTC
+                property "ads.attributeId" "385"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PTC";
+    public static final readonly Stock PVH
+                property "ads.attributeId" "386"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PVH";
+    public static final readonly Stock PWR
+                property "ads.attributeId" "387"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PWR";
+    public static final readonly Stock PXD
+                property "ads.attributeId" "388"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PXD";
+    public static final readonly Stock PYPL
+                property "ads.attributeId" "389"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "PYPL";
+    public static final readonly Stock QCOM
+                property "ads.attributeId" "390"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "QCOM";
+    public static final readonly Stock QRVO
+                property "ads.attributeId" "391"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "QRVO";
+    public static final readonly Stock RCL
+                property "ads.attributeId" "392"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RCL";
+    public static final readonly Stock RE
+                property "ads.attributeId" "393"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RE";
+    public static final readonly Stock REG
+                property "ads.attributeId" "394"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "REG";
+    public static final readonly Stock REGN
+                property "ads.attributeId" "395"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "REGN";
+    public static final readonly Stock RF
+                property "ads.attributeId" "396"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RF";
+    public static final readonly Stock RHI
+                property "ads.attributeId" "397"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RHI";
+    public static final readonly Stock RJF
+                property "ads.attributeId" "398"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RJF";
+    public static final readonly Stock RL
+                property "ads.attributeId" "399"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RL";
+    public static final readonly Stock RMD
+                property "ads.attributeId" "400"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RMD";
+    public static final readonly Stock ROK
+                property "ads.attributeId" "401"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ROK";
+    public static final readonly Stock ROL
+                property "ads.attributeId" "402"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ROL";
+    public static final readonly Stock ROP
+                property "ads.attributeId" "403"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ROP";
+    public static final readonly Stock ROST
+                property "ads.attributeId" "404"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ROST";
+    public static final readonly Stock RSG
+                property "ads.attributeId" "405"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RSG";
+    public static final readonly Stock RTX
+                property "ads.attributeId" "406"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "RTX";
+    public static final readonly Stock SBAC
+                property "ads.attributeId" "407"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SBAC";
+    public static final readonly Stock SBUX
+                property "ads.attributeId" "408"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SBUX";
+    public static final readonly Stock SCHW
+                property "ads.attributeId" "409"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SCHW";
+    public static final readonly Stock SEE
+                property "ads.attributeId" "410"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SEE";
+    public static final readonly Stock SHW
+                property "ads.attributeId" "411"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SHW";
+    public static final readonly Stock SIVB
+                property "ads.attributeId" "412"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SIVB";
+    public static final readonly Stock SJM
+                property "ads.attributeId" "413"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SJM";
+    public static final readonly Stock SLB
+                property "ads.attributeId" "414"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SLB";
+    public static final readonly Stock SNA
+                property "ads.attributeId" "415"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SNA";
+    public static final readonly Stock SNPS
+                property "ads.attributeId" "416"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SNPS";
+    public static final readonly Stock SO
+                property "ads.attributeId" "417"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SO";
+    public static final readonly Stock SPG
+                property "ads.attributeId" "418"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SPG";
+    public static final readonly Stock SPGI
+                property "ads.attributeId" "419"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SPGI";
+    public static final readonly Stock SRE
+                property "ads.attributeId" "420"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SRE";
+    public static final readonly Stock STE
+                property "ads.attributeId" "421"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STE";
+    public static final readonly Stock STT
+                property "ads.attributeId" "422"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STT";
+    public static final readonly Stock STX
+                property "ads.attributeId" "423"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STX";
+    public static final readonly Stock STZ
+                property "ads.attributeId" "424"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "STZ";
+    public static final readonly Stock SWK
+                property "ads.attributeId" "425"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SWK";
+    public static final readonly Stock SWKS
+                property "ads.attributeId" "426"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SWKS";
+    public static final readonly Stock SYF
+                property "ads.attributeId" "427"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SYF";
+    public static final readonly Stock SYK
+                property "ads.attributeId" "428"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SYK";
+    public static final readonly Stock SYY
+                property "ads.attributeId" "429"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SYY";
+    public static final readonly Stock T
+                property "ads.attributeId" "430"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "T";
+    public static final readonly Stock TAP
+                property "ads.attributeId" "431"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TAP";
+    public static final readonly Stock TDG
+                property "ads.attributeId" "432"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TDG";
+    public static final readonly Stock TDY
+                property "ads.attributeId" "433"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TDY";
+    public static final readonly Stock TEL
+                property "ads.attributeId" "434"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEL";
+    public static final readonly Stock TER
+                property "ads.attributeId" "435"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TER";
+    public static final readonly Stock TFC
+                property "ads.attributeId" "436"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TFC";
+    public static final readonly Stock TFX
+                property "ads.attributeId" "437"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TFX";
+    public static final readonly Stock TGT
+                property "ads.attributeId" "438"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TGT";
+    public static final readonly Stock TJX
+                property "ads.attributeId" "439"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TJX";
+    public static final readonly Stock TMO
+                property "ads.attributeId" "440"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TMO";
+    public static final readonly Stock TMUS
+                property "ads.attributeId" "441"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TMUS";
+    public static final readonly Stock TPR
+                property "ads.attributeId" "442"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TPR";
+    public static final readonly Stock TRMB
+                property "ads.attributeId" "443"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TRMB";
+    public static final readonly Stock TROW
+                property "ads.attributeId" "444"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TROW";
+    public static final readonly Stock TRV
+                property "ads.attributeId" "445"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TRV";
+    public static final readonly Stock TSCO
+                property "ads.attributeId" "446"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TSCO";
+    public static final readonly Stock TSLA
+                property "ads.attributeId" "447"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TSLA";
+    public static final readonly Stock TSN
+                property "ads.attributeId" "448"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TSN";
+    public static final readonly Stock TT
+                property "ads.attributeId" "449"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TT";
+    public static final readonly Stock TTWO
+                property "ads.attributeId" "450"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TTWO";
+    public static final readonly Stock TWTR
+                property "ads.attributeId" "451"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TWTR";
+    public static final readonly Stock TXN
+                property "ads.attributeId" "452"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TXN";
+    public static final readonly Stock TXT
+                property "ads.attributeId" "453"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TXT";
+    public static final readonly Stock TYL
+                property "ads.attributeId" "454"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TYL";
+    public static final readonly Stock UA
+                property "ads.attributeId" "455"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UA";
+    public static final readonly Stock UAA
+                property "ads.attributeId" "456"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UAA";
+    public static final readonly Stock UAL
+                property "ads.attributeId" "457"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UAL";
+    public static final readonly Stock UDR
+                property "ads.attributeId" "458"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UDR";
+    public static final readonly Stock UHS
+                property "ads.attributeId" "459"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UHS";
+    public static final readonly Stock ULTA
+                property "ads.attributeId" "460"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ULTA";
+    public static final readonly Stock UNH
+                property "ads.attributeId" "461"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UNH";
+    public static final readonly Stock UNM
+                property "ads.attributeId" "462"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UNM";
+    public static final readonly Stock UNP
+                property "ads.attributeId" "463"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UNP";
+    public static final readonly Stock UPS
+                property "ads.attributeId" "464"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UPS";
+    public static final readonly Stock URI
+                property "ads.attributeId" "465"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "URI";
+    public static final readonly Stock USB
+                property "ads.attributeId" "466"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "USB";
+    public static final readonly Stock V
+                property "ads.attributeId" "467"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "V";
+    public static final readonly Stock VFC
+                property "ads.attributeId" "468"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VFC";
+    public static final readonly Stock VIAC
+                property "ads.attributeId" "469"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VIAC";
+    public static final readonly Stock VLO
+                property "ads.attributeId" "470"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VLO";
+    public static final readonly Stock VMC
+                property "ads.attributeId" "471"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VMC";
+    public static final readonly Stock VNO
+                property "ads.attributeId" "472"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VNO";
+    public static final readonly Stock VRSK
+                property "ads.attributeId" "473"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VRSK";
+    public static final readonly Stock VRSN
+                property "ads.attributeId" "474"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VRSN";
+    public static final readonly Stock VRTX
+                property "ads.attributeId" "475"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VRTX";
+    public static final readonly Stock VTR
+                property "ads.attributeId" "476"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VTR";
+    public static final readonly Stock VTRS
+                property "ads.attributeId" "477"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VTRS";
+    public static final readonly Stock VZ
+                property "ads.attributeId" "478"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "VZ";
+    public static final readonly Stock WAB
+                property "ads.attributeId" "479"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WAB";
+    public static final readonly Stock WAT
+                property "ads.attributeId" "480"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WAT";
+    public static final readonly Stock WBA
+                property "ads.attributeId" "481"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WBA";
+    public static final readonly Stock WDC
+                property "ads.attributeId" "482"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WDC";
+    public static final readonly Stock WEC
+                property "ads.attributeId" "483"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WEC";
+    public static final readonly Stock WELL
+                property "ads.attributeId" "484"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WELL";
+    public static final readonly Stock WFC
+                property "ads.attributeId" "485"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WFC";
+    public static final readonly Stock WHR
+                property "ads.attributeId" "486"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WHR";
+    public static final readonly Stock WLTW
+                property "ads.attributeId" "487"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WLTW";
+    public static final readonly Stock WM
+                property "ads.attributeId" "488"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WM";
+    public static final readonly Stock WMB
+                property "ads.attributeId" "489"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WMB";
+    public static final readonly Stock WMT
+                property "ads.attributeId" "490"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WMT";
+    public static final readonly Stock WRB
+                property "ads.attributeId" "491"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WRB";
+    public static final readonly Stock WRK
+                property "ads.attributeId" "492"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WRK";
+    public static final readonly Stock WST
+                property "ads.attributeId" "493"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WST";
+    public static final readonly Stock WU
+                property "ads.attributeId" "494"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WU";
+    public static final readonly Stock WY
+                property "ads.attributeId" "495"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WY";
+    public static final readonly Stock WYNN
+                property "ads.attributeId" "496"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WYNN";
+    public static final readonly Stock XEL
+                property "ads.attributeId" "497"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XEL";
+    public static final readonly Stock XLNX
+                property "ads.attributeId" "498"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XLNX";
+    public static final readonly Stock XOM
+                property "ads.attributeId" "499"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XOM";
+    public static final readonly Stock XRAY
+                property "ads.attributeId" "500"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XRAY";
+    public static final readonly Stock XYL
+                property "ads.attributeId" "501"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "XYL";
+    public static final readonly Stock YUM
+                property "ads.attributeId" "502"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "YUM";
+    public static final readonly Stock ZBH
+                property "ads.attributeId" "503"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZBH";
+    public static final readonly Stock ZBRA
+                property "ads.attributeId" "504"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZBRA";
+    public static final readonly Stock ZION
+                property "ads.attributeId" "505"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZION";
+    public static final readonly Stock ZTS
+                property "ads.attributeId" "506"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ZTS";
+}
+
