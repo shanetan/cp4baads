@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>cp4admin.test_project2.my_test_service</groupId>
+        <groupId>cp4admin.shane_test_decision_service.my_test_service</groupId>
         <artifactId>myTestService</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -11,6 +11,11 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>cp4admin.shane_test_decision_service.my_test_service</groupId>
+            <artifactId>data</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>cp4admin.test_project2.my_test_service</groupId>
             <artifactId>myDecisionModel</artifactId>
@@ -30,6 +35,8 @@
     </dependencies>
 
     
+
+
 
 <build>
         <resources>
@@ -55,6 +62,15 @@
                         </goals>
                         <configuration>
                             <artifactItems>
+                                <artifactItem>
+                                    <groupId>cp4admin.shane_test_decision_service.my_test_service</groupId>
+                                    <artifactId>data</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
                                 <artifactItem>
                                     <groupId>cp4admin.test_project2.my_test_service</groupId>
                                     <artifactId>myDecisionModel</artifactId>

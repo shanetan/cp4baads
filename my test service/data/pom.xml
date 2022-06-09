@@ -7,8 +7,8 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>cp4admin.test_project2.my_test_service</groupId>
-    <artifactId>myDecisionModel</artifactId>
+    <groupId>cp4admin.shane_test_decision_service.my_test_service</groupId>
+    <artifactId>data</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
     <build>
@@ -26,21 +26,16 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>my-decision-model</name>
+                            <name>data</name>
                         </deployment>
                     </deployments>
-                <packageName>cp4admin.test_project2.my_test_service.mydecisionmodel</packageName>
+                <packageName>cp4admin.shane_test_decision_service.my_test_service.data</packageName>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
 <dependencies>
-        <dependency>
-            <groupId>cp4admin.shane_test_decision_service.my_test_service</groupId>
-            <artifactId>data</artifactId>
-            <version>LATEST-SNAPSHOT</version>
-        </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>

@@ -1,0 +1,26 @@
+
+# Temperature
+Temperature#concept.label = temperature
+Temperature.cold#instance.documentation = 
+Temperature.cold#instance.label = cold
+Temperature.hot#instance.label = hot
+Temperature.warm#instance.label = warm
+
+# Weather
+Weather#concept.documentation = weather
+Weather#concept.label = weather
+Weather.Weather(java.lang.Long,boolean,Temperature)#phrase.navigation = a new {weather} where {0, rain forcast} {1, storm alert} {2, temperature}
+Weather.rainForcast#phrase.action = set the rain forcast of {this} to {rain forcast}
+Weather.rainForcast#phrase.addition_setter = add {rain forcast} to the rain forcast of {this}
+Weather.rainForcast#phrase.navigation = {rain forcast} of {this}
+Weather.rainForcast#phrase.subtraction_setter = subtract {rain forcast} from the rain forcast of {this}
+Weather.stormAlert#phrase.action[0] = {this} gets storm alert only if {storm alert}
+Weather.stormAlert#phrase.action[1] = make it {storm alert} that {this} is storm alert
+Weather.stormAlert#phrase.action[1].deprecated = true
+Weather.stormAlert#phrase.navigation = {this} is storm alert
+Weather.stormAlert#phrase.negative_predicate = {this} is not storm alert
+Weather.stormAlert#phrase.negative_predicate_setter = {this} does not get storm alert
+Weather.stormAlert#phrase.positive_predicate_setter = {this} gets storm alert
+Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
+Weather.temperature#phrase.clearer = clear the temperature of {this}
+Weather.temperature#phrase.navigation = {temperature} of {this}

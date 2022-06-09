@@ -19,6 +19,7 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="java.lang.String" collection="false" name="Name"/>
+                <input bomType="java.lang.String" collection="false" name="Weather advice"/>
                 <output bomType="java.lang.String" collection="false" name="Daily advice"/>
                 <rule defaultRule="false" href="node_1/advice%20rule.drl" kind="BusinessRule" name="advice rule"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
@@ -28,6 +29,31 @@
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
     </decision>
+    <decision id="node_2" name="Weather advice">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
+                <input bomType="Weather" collection="false" name="Weather"/>
+                <output bomType="java.lang.String" collection="false" name="Weather advice"/>
+                <rule defaultRule="false" href="node_2/storm%20rule.drl" kind="BusinessRule" name="storm rule"/>
+                <rule defaultRule="false" href="node_2/weather%20table.dmt" kind="DecisionTable" name="weather table"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Weather advice" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_3" name="Weather">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Weather" collection="false" name="Weather"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_3_ii" name="Weather" typeRef="Weather"/>
+    </inputData>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

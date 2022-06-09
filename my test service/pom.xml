@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cp4admin.test_project2.my_test_service</groupId>
+    <groupId>cp4admin.shane_test_decision_service.my_test_service</groupId>
     <artifactId>myTestService</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -59,6 +59,7 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
+        <module>data</module>
         <module>my decision model</module>
     </modules>
 
