@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="test-task-model" usingRuleflow="true" ruleflowName="myflow" targetRuleProjectName="test task model">
+  <name>test-task-model</name>
+  <uuid>c21789a6-a336-4b32-8ecb-84aaebe2d2bd</uuid>
+  <ruleflow href="../rules/myflow.rfl#f90b649a-4f08-4a1c-93a6-5fe1adecf026"/>
+  <targetRuleProject href="../../test%20task%20model#acb22086-7d91-40d9-a9ad-5fc80095c336"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

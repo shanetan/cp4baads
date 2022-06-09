@@ -1,0 +1,24 @@
+
+# Game
+Game#concept.documentation = 
+Game#concept.label = Game
+Game.Game(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.Long)#phrase.navigation = a new {Game} where {0, department} {1, id} {2, name} {3, phone} {4, result} {5, salary}
+Game.department#phrase.action = set the department of {this} to {department}
+Game.department#phrase.navigation = {department} of {this}
+Game.id#phrase.action = set the id of {this} to {id}
+Game.id#phrase.navigation = {id} of {this}
+Game.name#phrase.action = set the name of {this} to {name}
+Game.name#phrase.navigation = {name} of {this}
+Game.phone#phrase.action = set the phone of {this} to {phone}
+Game.phone#phrase.navigation = {phone} of {this}
+Game.result#phrase.action[0] = {this} gets result only if {result}
+Game.result#phrase.action[1] = make it {result} that {this} is result
+Game.result#phrase.action[1].deprecated = true
+Game.result#phrase.navigation = {this} is result
+Game.result#phrase.negative_predicate = {this} is not result
+Game.result#phrase.negative_predicate_setter = {this} does not get result
+Game.result#phrase.positive_predicate_setter = {this} gets result
+Game.salary#phrase.action = set the salary of {this} to {salary}
+Game.salary#phrase.addition_setter = add {salary} to the salary of {this}
+Game.salary#phrase.navigation = {salary} of {this}
+Game.salary#phrase.subtraction_setter = subtract {salary} from the salary of {this}
